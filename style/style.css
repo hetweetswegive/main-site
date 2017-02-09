@@ -279,3 +279,107 @@ input[type="checkbox"] {
   height: 300px;
   float: left;
 }
+
+/* Form Control ------------------------------------------------
+---------------------------------------------------------------- */
+
+.form-control {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  line-height: 30px;
+}
+
+/* Hide Default Input ------------------------------------------
+---------------------------------------------------------------- */
+
+.form-control input {
+  opacity: 0;
+}
+
+.form-control-indicator {
+  box-shadow: inset 0 0 0 2px #d2d2d2;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.form-control input {
+  position: absolute;
+}
+
+.checkbox input:checked~.form-control-indicator {
+  box-shadow: inset 0 0 0 2px rgb(252,188,122);
+  background-color: rgb(252,188,122);
+}
+
+.checkbox-tick, .form-control-indicator,
+.checkbox input:checked~.form-control-indicator .checkbox-tick,
+.form-control input:active~.form-control-indicator,
+.form-control input:checked~.form-control-indicator {
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0,.89,.44,1);
+}
+
+.form-control input:focus~.form-control-indicator {
+  /*box-shadow: inset 0 0 0 2px rgb(252,188,122);*/
+}
+
+.form-control .form-control-indicator {
+  width: 30px;
+  height: 30px;
+}
+
+/* Form Control ------------------------------------------------
+---------------------------------------------------------------- */
+
+/* Indicator --------------------------- */
+
+.form-control-indicator, .userSelect-none {
+  user-select: none;
+}
+
+
+/* Checkbox ----------------------------------------------------
+---------------------------------------------------------------- */
+
+.checkbox .form-control-indicator {
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+/* Tick -------------------------------- */
+
+.checkbox-tick {
+  /*transform: scale(0);*/
+  opacity: 0;
+  font-size: 20px;
+  color: #ffffff;
+
+}
+
+.checkbox input:checked~.form-control-indicator .checkbox-tick {
+  opacity: 100;
+  /*transform: scale(1);*/
+
+}
+
+svg.checkbox-tick * {
+  fill: #ffffff;
+}
+
+/*.checkbox:last-child label {
+  margin-bottom: 0;
+}*/
+
+.icon-text {
+  padding: 0px;
+  /*color: black;*/
+  font-size: 22px;
+  line-height: 33px;
+  /*font-weight: 700;*/
+  /*letter-spacing: 1px;*/
+}
