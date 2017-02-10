@@ -298,6 +298,13 @@ input[type="checkbox"] {
   opacity: 0;
 }
 
+/* Style New Input ---------------------------------------------
+---------------------------------------------------------------- */
+
+.checkbox {
+	margin: 18px 0 36px 0;
+}
+
 .form-control-indicator {
   box-shadow: inset 0 0 0 2px #d2d2d2;
   top: 0;
@@ -378,8 +385,9 @@ svg.checkbox-tick * {
 .icon-text {
   padding: 0px;
   /*color: black;*/
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #4a4a4a;
   /*font-weight: 700;*/
   /*letter-spacing: 1px;*/
 }
